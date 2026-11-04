@@ -1,0 +1,12 @@
+>C:\msys64\ucrt64\lib/ghdl\ieee\v93\
+../../src/ieee/v93/std_logic_1164.vhdl
+>C:\msys64\ucrt64\lib/ghdl\ieee\v93\
+../../src/ieee/v93/std_logic_1164-body.vhdl
+>
+contador_4bits_tb.vhd
+>C:\msys64\ucrt64\lib/ghdl\ieee\v93\
+../../src/ieee/v93/numeric_std.vhdl
+>C:\msys64\ucrt64\lib/ghdl\ieee\v93\
+../../src/ieee/v93/numeric_std-body.vhdl
+>
+contador_4bits.vhd
