@@ -5,7 +5,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use work.all;                   -- Si no usara work al exportar la entidad deberia usar work.contador 
--- use std.env.finish;             -- Sirve para importar un procedimiento de finish en estimulo.
+use std.env.finish;             -- Sirve para importar un procedimiento de finish en estimulo.
 
 
 entity contador_4bits_tb is end;
@@ -51,41 +51,41 @@ reloj: process
 
 estimulo: process 
     begin 
-        -- 1 Estado inicial con Reset activo.
+        -- Empiezo con reset activo.
 
         reset <= '1'; 
         hab <= '0'; 
         carga <= '0'; 
         valor <= "0000"; 
-        wait for 20 ns;                 -- Se debería mantener.
+        wait for 2 * periodo;                 -- Se debería mantener dos periodos.
 
-        -- 2 Quito el Reset y habilito el conteo ascendente
+        -- Quito el reset y habilito el conteo ascendente 
 
          reset <= '0';
          hab <= '1'; 
-        wait for 50 ns;                 -- Debería contar algunos ciclos
+        wait for 3 * periodo ;                 -- Debería contar algunos ciclos
 
-        -- 3 Inhabilito el contador 
+        -- Inhabilito el contador 
 
         hab <= '0';
-         wait for 30 ns;                -- Debería mantener el estado
+         wait for 2* periodo;                -- Debería mantener el estado
 
-        -- 4 Cargo el valor 10 (1010 en binario) mientras cuenta
+        -- Cargo el valor 10 (1010 en binario) mientras cuenta
 
         valor <= "1010";
         carga <= '1'; 
-        wait for 10 ns;                  -- Debería carga en el flanco de subida
+        wait for periodo;                  -- Debería carga en el flanco de subida
         
-        -- 5 Quito carga y reanudo el conteo desde 10 
+        -- Quito carga y reanudo el conteo desde 10 
 
         carga <= '0';
         hab <= '1';
-        wait for 60 ns;
+        wait for 3 * periodo;
 
-        -- 6 Fin de la simulación 
+        -- Fin
         
-         wait; -- Detiene el proceso para no repetir el bucle 
---        finish;     -- Este es el std.env.finish
+      --   wait; -- Detiene el proceso para no repetir el bucle 
+       finish;     -- Este es el std.env.finish
      end process;   -- Estimulo
     
 end architecture;

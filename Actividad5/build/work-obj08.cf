@@ -1,16 +1,16 @@
 v 4
-file / "L:/electronica2/Actividad5/src/prueba_io.vhd" "9a28fd38ae8580b2d0621182b5fc169c031d5d3b" "20261103114910.506":
-  entity prueba_io at 1( 0) + 0 on 4;
-  architecture arch of prueba_io at 11( 199) + 0 on 4;
-file / "L:/electronica2/Actividad5/src/ejemplo_tb.vhd" "db0d4390e5a078260a061ebd85c129a83fa1c2cb" "20261101021846.437":
-  entity ejemplo_tb at 1( 0) + 0 on 4;
-  architecture tb of ejemplo_tb at 9( 124) + 0 on 4;
+file / "L:/electronica2/Actividad5/src/contador_4bits_tb.vhd" "3e14c784ce8f3effd2cd1200dcc9f87568f4fead" "20261105195345.933":
+  entity contador_4bits_tb at 5( 101) + 0 on 13;
+  architecture tb of contador_4bits_tb at 16( 392) + 0 on 14;
+file / "L:/electronica2/Actividad5/src/contador_4bits.vhd" "094d596cb6c13438e92b96fa41a20016217a0eaf" "20261105195345.860":
+  entity contador at 1( 0) + 0 on 11;
+  architecture arch of contador at 39( 1294) + 0 on 12;
 file / "L:/electronica2/Actividad5/src/ejemplo.vhd" "c27dfe956c73d446fb15af37c1623db5c321ff4b" "20261101021846.437":
   entity ejemplo at 1( 0) + 0 on 4;
   architecture arch of ejemplo at 12( 182) + 0 on 4;
-file / "L:/electronica2/Actividad5/src/contador_4bits.vhd" "8051ccf644d3308b1620eaa488a2fa95322fac15" "20261103114910.929":
-  entity contador at 1( 0) + 0 on 11;
-  architecture arch of contador at 39( 1293) + 0 on 12;
-file / "L:/electronica2/Actividad5/src/contador_4bits_tb.vhd" "2c938ada6dcab7edbd16a477c53f4fb056ce77f3" "20261103114911.149":
-  entity contador_4bits_tb at 5( 106) + 0 on 13;
-  architecture tb of contador_4bits_tb at 16( 397) + 0 on 14;
+file / "L:/electronica2/Actividad5/src/ejemplo_tb.vhd" "db0d4390e5a078260a061ebd85c129a83fa1c2cb" "20261101021846.437":
+  entity ejemplo_tb at 1( 0) + 0 on 4;
+  architecture tb of ejemplo_tb at 9( 124) + 0 on 4;
+file / "L:/electronica2/Actividad5/src/prueba_io.vhd" "9a28fd38ae8580b2d0621182b5fc169c031d5d3b" "20261105195345.539":
+  entity prueba_io at 1( 0) + 0 on 4;
+  architecture arch of prueba_io at 11( 199) + 0 on 4;
