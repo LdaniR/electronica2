@@ -1,6 +1,14 @@
 #include <stdbool.h>
 #include <stdint.h>
 
+/*
+Los archivos tipo .h en c se utilizan de cabecera (.h por header) sirven para conectar archivos .c y nos sirve de interfaz
+para conectar la alu (.c) con el resto del programa
+
+*/
+
+
+
 enum Operaciones_e {
     OP_SUMA,
     OP_RESTA,
@@ -18,7 +26,6 @@ enum Operaciones_e {
     OP_AND,
     OP_AND_ALT,
 };
-
 /**
  * @brief Calcula la salida de la unidad aritmética lógica según las entradas
  * dadas

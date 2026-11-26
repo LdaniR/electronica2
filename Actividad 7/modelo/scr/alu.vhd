@@ -1,6 +1,6 @@
 library ieee;
 use ieee.numeric_std.all;       -- signal y por el shift
-use ieee.math_real.all; 
+use ieee.math_real.all;         
 use ieee.std_logic_1164.all;    
 
 /*
