@@ -30,7 +30,7 @@ entity alu is
 
 architecture arc of alu is
     constant n :natural := integer(ceil(log2(real(w))));
-    constant relleno : std_logic_vector(w-2 downto 0) := (others => '0');  
+    constant relleno : std_logic_vector(w-2 downto 0) := (others => '0');  -- sirven para rellenar el resultado del boleano
 -- Signed y unsigned entregan un std_logic para asignarlo en y se necesita un std_logic_vector para eso concatenaremos
 -- el resultado con un vector y ese lo asignamos.
                                                                                 
